@@ -48,6 +48,9 @@
 
 
     .blast {
+      position: relative;
+      transform: translate(300px, -25px);
+      transition: transform 3s;
       @media @mobile {
        width:100%;
       }
@@ -99,9 +102,11 @@
     .button {
       .btnmix;
       .button-size(60px,150px);
-      font-size:20px;
+      font-size:20px;     
+      .button-hover;
       @media @mobile {
         width:100%;
+        .button-hover;
       }
         }
 
@@ -138,9 +143,16 @@
         border-radius: 10px;
       }
     }
+    
   }
 
   
 // home
 
+// About Page: added directly to CSS 
+.background-container {
+  @media @mobile {
+    width:100%;
+   }
 
+}

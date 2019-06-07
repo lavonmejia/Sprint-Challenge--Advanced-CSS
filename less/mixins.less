@@ -23,13 +23,17 @@
     border: 1px solid black;
     cursor: pointer;
     background-color: @btn-bg-color;
-}
+   }
 
 
    .button-size(@height, @width){
        height: @height;
        width:@width;
    }
-
-
-
+ 
+   .button-hover{
+       .button:hover{
+    background-color: @wildsand;
+    color: @btn-bg-color;
+       }
+    }
