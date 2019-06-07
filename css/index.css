@@ -184,6 +184,11 @@ p {
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .top-of-page {
+    width: 100%;
+  }
+}
 .top-of-page .logo {
   margin: 10px;
   display: flex;
@@ -194,8 +199,16 @@ p {
   height: 100%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .top-of-page nav {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+  }
+}
 .top-of-page nav a {
-  font-weight: 700rem;
+  font-weight: bolder;
   margin: 15px;
   text-decoration: none;
   color: #23293B;
@@ -212,7 +225,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home {
-    border: 2px solid red;
     margin: auto;
     width: 100%;
   }
@@ -228,9 +240,12 @@ footer {
   }
   .home .blast {
     width: 100%;
+    margin: auto;
   }
-  .home .walk {
-    padding: 0px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    padding: 15px;
   }
 }
 .home h2 {
@@ -244,9 +259,37 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
+@media (max-width: 500px) {
+  .home .space-images {
+    padding: 25px;
+  }
+}
+.home .blast {
   width: 28%;
   margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .blast {
+    width: 100%;
+  }
+}
+.home .sky {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.home .launch {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.home .planetPic {
+  width: 100%;
+  margin: auto;
   border-radius: 20px;
   height: 100%;
 }
@@ -266,6 +309,14 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .button {
   border-radius: 15px;
   display: flex;
@@ -279,8 +330,18 @@ footer {
   width: 150px;
   font-size: 20px;
 }
+@media (max-width: 500px) {
+  .home .walk .button {
+    width: 100%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -295,15 +356,16 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     order: 2;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
   }
 }
 .home .walk img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-.planetPic {
-  margin: 25px 2.5%;
-  border-radius: 20px;
-  height: 100%;
 }
