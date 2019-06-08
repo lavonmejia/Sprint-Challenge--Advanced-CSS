@@ -1,1 +1,39 @@
 // Mixins Here
+
+
+.put-in-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+//   used in the footer
+
+.uniform-padding {
+    padding:15px;
+}
+// used in home-page.less and nav.less
+
+
+.btnmix {
+    border-radius:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: @btn-bg-color;
+   }
+
+
+   .button-size(@height, @width){
+       height: @height;
+       width:@width;
+   }
+ 
+   .button-hover{
+       .button:hover{
+    background-color: @wildsand;
+    color: @btn-bg-color;
+       }
+    }

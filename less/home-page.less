@@ -1,34 +1,77 @@
+
 // Home Content
+  
 
 .home {
-
+  @media @mobile {
+    // border: 2px solid red;
+    margin:auto;
+    width:100%;
+      .sky {
+        display:none;
+      }
+      .planetPic {
+      margin:auto;
+      height:87px;
+      }
+      .launch {
+        display:none;
+      }
+      .blast {
+        width:100%;
+        margin:auto;
+      }
+      
+      }
   .intro {
+     @media @mobile {
+      .uniform-padding;
+    }
+  }
 
     h2 {
-      padding: 15px;
+      .uniform-padding;
     }
 
     p {
       padding:0 15px;
     }
   
-  }
-
-  .space-images {
+    .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+       }
 
-    img {
+      .blast {
+      width:100%;
+      @media @mobile {   
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;}
+    .sky {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
-  }
+    .launch {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+    }
+
+    .planetPic {
+      width: 100%;
+      margin: auto;
+      border-radius: 20px;
+      height: 100%;
+        }
 
   .visit-planets {
-    padding: 15px;
+    .uniform-padding;
 
     h3 {
       margin-top: 11px;
@@ -45,9 +88,29 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile {
+      .uniform-padding;
+      margin:auto;
+      display:flex;
+      flex-direction: column-reverse;
+        }
+    
+    .button {
+      .btnmix;
+      .button-size(60px,150px);
+      font-size:20px;     
+      .button-hover;
+      @media @mobile {
+        width:100%;
+        .button-hover;
+      }
+        }
 
     .walk-text {
       width: 50%;
+      @media @mobile {
+      width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -56,20 +119,36 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+      @media @mobile {
+        order:2;
+        margin:auto;
+        @media @mobile {
+          width:100%;
+         }
       }
+    
     }
+      // img {
+      //   width: 100%;
+      //   height: auto;
+      //   border-radius: 10px;
+      // }
+    }
+    
   }
-}// home
+
+  
+// home
+
+// About Page: added directly to CSS 
+.background-container {
+  @media @mobile {
+    width:100%;
+   }
+
+}

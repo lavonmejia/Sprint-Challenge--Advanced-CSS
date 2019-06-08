@@ -1,1 +1,35 @@
 // Navigation code here
+
+.top-of-page {
+    background-color:@nav-border;
+    padding:10px;
+    width:50%;
+    margin:0 auto;
+    @media @mobile {
+       width:100%;
+      }
+        .logo {
+            margin:10px;
+            display:flex;
+            justify-content: center;
+            font-size:35px;
+            }
+
+        nav {
+            height:100%;
+            text-align:center;
+            @media @mobile {
+              display:flex;
+              flex-direction: row;
+              margin:auto;
+              justify-content: center;
+            }
+                    }
+        nav a {
+            font-weight: bolder;
+            font-size:20px;
+            margin:15px;
+            text-decoration: none;
+            color:@ebony-clay;           
+        }
+}
