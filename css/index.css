@@ -375,7 +375,7 @@ footer {
   color: grey;
 }
 
-
+/* /*  */
 @keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
@@ -451,16 +451,17 @@ footer {
   top: 0;
   bottom: 0;
   z-index: 3;
-  /* -moz-animation: move-background 175s linear infinite; */
-  /* -ms-animation: move-background 175s linear infinite; */
-  /* -o-animation: move-background 175s linear infinite; */
-  /* -webkit-animation: move-background 175s linear infinite; */
+  -moz-animation: move-background 175s linear infinite; 
+  -ms-animation: move-background 175s linear infinite;
+  -o-animation: move-background 175s linear infinite;
+  -webkit-animation: move-background 175s linear infinite;
   animation: move-background 150s linear infinite;
 }
-img {
+
+.moon {
   height: 70vh;
   width: 70vh;
   position: absolute;
   z-index: 3;
   right: 20px;
-}
+} 
